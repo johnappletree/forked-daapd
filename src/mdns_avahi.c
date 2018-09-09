@@ -57,7 +57,7 @@
 #define MDNSERR avahi_strerror(avahi_client_errno(mdns_client))
 
 // Seconds to wait before timing out when making device connection test
-#define MDNS_CONNECT_TEST_TIMEOUT 2
+#define MDNS_CONNECT_TEST_TIMEOUT 10
 
 /* Main event base, from main.c */
 extern struct event_base *evbase_main;
