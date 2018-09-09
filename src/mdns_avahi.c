@@ -581,13 +581,6 @@ address_check(AvahiProtocol proto, const char *hostname, const AvahiAddress *add
       return -1;
     }
 
-  ret = connection_test(family, address, address_log, port);
-  if (ret < 0)
-    {
-      DPRINTF(E_WARN, L_MDNS, "Ignoring announcement from %s, address %s is not connectable\n", hostname, address_log);
-      return -1;
-    }
-
   return 0;
 }
 
